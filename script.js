@@ -2,7 +2,7 @@ let list  = []
 
 function add(){
     let newList = document.querySelector("input").value
-    if (document.querySelector("input").value == ""){
+    if (document.querySelector("input").value == "" && list.length <2){
         alert("fill out the empty fiel!")
     }else{
         if(list.includes(newList)){
@@ -17,7 +17,7 @@ function add(){
     
 }
 document.querySelector("button").addEventListener("click",()=>{
-    if (document.querySelector("input").value == ""){
+    if (document.querySelector("input").value == ""&& list.length < 2){
         alert("fill out the empty fiel!")
     }else if(list.length <2){
         alert("The minimum number of participants is 2!")
